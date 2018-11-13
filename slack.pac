@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.slack-edge.com") ||
         shExpMatch(host, "*.slack-core.com") ||
         shExpMatch(host, "*.slack-redir.net")) {
-        return "SOCKS 127.0.0.1:1234; DIRECT";
+        return "SOCKS5 127.0.0.1:1234; DIRECT";
     }
 
     return "DIRECT";
